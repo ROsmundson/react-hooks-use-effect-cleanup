@@ -86,9 +86,9 @@ function Clock() {
     }, 1000);
 
     // returning a cleanup function
-    return function cleanup() {
-      clearInterval(timerID);
-    };
+    // return function cleanup() {
+    //   clearInterval(timerID);
+    // };
   }, []);
 
   return <div>{time.toString()}</div>;
